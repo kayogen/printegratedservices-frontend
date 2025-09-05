@@ -1,0 +1,82 @@
+
+
+:root { --green:#28b463; }
+
+.footer {
+  background:#0b1b13;
+  color:#d1d5db;
+  padding-top:48px;
+}
+
+.container {
+  max-width:1240px;
+  margin:0 auto;
+  padding:0 20px 32px;
+  display:grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap:40px;
+}
+
+.brandCol { max-width:420px; }
+.brandRow { display:flex; gap:12px; align-items:center; margin-bottom:12px; }
+.logoIcon { font-size:28px; }
+.brandLine { font-weight:800; font-size:20px; line-height:1; }
+.pro { color: var(--green); }
+.clean { color:#fff; }
+.sub { font-size:12px; color:#98a2b3; }
+.copyText { color:#9ca3af; }
+
+.cols {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:28px;
+}
+
+.colTitle {
+  color:#fff;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.links { list-style:none; padding:0; margin:0; }
+.links a { color:#cbd5e1; text-decoration:none; }
+.links a:hover { color:#fff; }
+
+.news {
+  display:flex;
+  gap:10px;
+}
+.news input{
+  flex:1;
+  background:#0f2a1d;
+  border:1px solid #1f3b2b;
+  color:#e5e7eb;
+  border-radius:10px;
+  padding:10px 12px;
+  outline:none;
+}
+.news button{
+  padding:10px 16px;
+  border:none;
+  border-radius:10px;
+  background: var(--green);
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.bottom {
+  border-top:1px solid rgba(255,255,255,0.08);
+  text-align:center;
+  padding:16px 20px;
+  color:#9ca3af;
+  font-size:14px;
+}
+
+@media (max-width: 900px) {
+  .container { grid-template-columns: 1fr; }
+  .cols { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .cols { grid-template-columns: 1fr; }
+}
