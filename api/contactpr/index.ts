@@ -1,4 +1,4 @@
-// pages/api/contact/index.ts
+// api/contact/index.ts
 import type { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 
